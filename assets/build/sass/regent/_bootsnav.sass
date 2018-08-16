@@ -1,0 +1,173 @@
+
+nav.navbar.bootsnav
+    // transition: all 0.3s ease-out
+    // .navbar-header
+    //     +ipad
+    //         position: relative
+    //         height: 50px
+    //     .navbar-brand
+    //         padding: 0
+    //         height: $logo-height
+    //         margin-left: 0
+    //         position: absolute
+    //         top: 50%
+    //         transform: translateY(-50%)
+    //         +ipad
+    //             left: 50%
+    //             top: 50%
+    //             transform: translate(-50%, -50%)
+    //         .logo
+    //             height: 100%
+    //             width: auto
+    //
+    //     .navbar-toggle
+    //         margin-top: 9px
+
+    ul.nav
+        > li
+            &:hover,
+            &.active
+                > a
+                    color: $primary
+
+    ul.nav
+        li
+            &.dropdown
+                > ul.dropdown-menu
+                    border-top-color: $primary
+                    li
+                        &:hover
+                            > a
+                                color: $primary
+    .megamenu-content
+        .title
+            text-transform: uppercase
+
+    .attr-nav
+        // margin: 0
+        +mobile
+            margin-right: -20px
+            // margin-top: 2px
+        > ul
+            height: inherit
+            > li
+                height: inherit
+                > a
+                    height: inherit
+
+    // .navbar-transparent.dark
+    &.navbar-transparent
+        .attr-nav
+            height: 82px
+        &.dark,
+        &.white
+            border-bottom-color: rgba($white, .2)
+            .attr-nav
+                border-left-color: rgba($white, .2)
+
+        &.white--outline
+            background-color: transparent
+
+    // add black
+    &.black
+        background-color: $black
+        border-bottom-color: $black
+        ul.nav
+            > li
+                > a
+                    color: $white
+                &:hover,
+                &.active
+                    > a
+                        color: $white
+        .attr-nav
+            > ul
+                > li
+                    > a
+                        color: $white
+
+        .navbar-toggle
+            color: $white
+
+        @media (max-width: 992px)
+            .navbar-collapse
+                background-color: $white
+                ul.nav
+                    > li
+                        > a
+                            color: inherit
+
+    // personal landing page
+    &.navbar--personal
+        border-bottom-color: transparent
+        transition: all 0.3s ease-out
+        .navbar-toggle
+            .Icon-cross1
+                display: none
+        @media screen and (min-width: $ipad + 1)
+            padding-top: 0px
+            padding-left: 70px
+            padding-right: 70px
+            &.no-background
+                padding-top: 70px
+
+            .container
+                position: relative
+                width: 100%
+                // background-color: rgba($black, .1)
+
+            // .navbar-header
+            //     display: block
+            //     width: 100%
+            //     .navbar-brand
+            //         // padding-top: 0
+            //         // padding-bottom: 0
+            // .navbar-toggle
+            //     display: inline-block
+            //     margin: 0
+            //     padding: 30px 15px
+            //     top: 0
+            //     margin-right: -15px
+            //     line-height: 20px
+            //     &[aria-expanded="true"]
+            //         color: $primary
+            //         .Icon-cross1
+            //             display: block
+            //         .Icon-align-left
+            //             display: none
+            //     &[aria-expanded="false"]
+            //         .Icon-cross1
+            //             display: none
+            //         .Icon-align-left
+            //             display: block
+            //
+            // .navbar-collapse
+            //     position: absolute
+            //     top: 0
+            //     right: 0
+            //     margin-right: 45px
+            //     padding: 0
+            //     visibility: hidden
+            //     opacity: 0
+            //     &.collapse
+            //         visibility: hidden
+            //         opacity: 0
+            //         transition: all .2s ease-out
+            //         &[aria-expanded="true"]
+            //             visibility: visible
+            //             opacity: 1
+            //             transition: all .2s ease-out
+
+
+ul.cart-list > li.total > .btn
+    border-color: $primary
+
+ul.cart-list > li.total > .btn,
+.attr-nav > ul > li > a span.badge,
+nav.navbar .share ul > li > a:hover,
+nav.navbar .share ul > li > a:focus
+    background-color: $primary
+
+ul.cart-list > li.total > .btn:hover,
+ul.cart-list > li.total > .btn:focus
+    background-color: $gray-darker !important
