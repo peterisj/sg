@@ -556,6 +556,11 @@ p.text-white .btn-go
     background-color: #fff;
 }
 
+.bg-darker h5
+{
+    color: #e30613;
+}
+
 .bg-primary
 {
     color: #fff;
@@ -4945,12 +4950,12 @@ div[class*='col-'].media-left
 .bg-dark .owl-theme .owl-nav,
 .bg-darker .owl-theme .owl-nav
 {
-    color: rgba(255, 255, 255, .33);
+    color: rgba(227, 6, 19, 1);
 }
 .bg-dark .owl-theme .owl-nav [class*='owl-']:hover,
 .bg-darker .owl-theme .owl-nav [class*='owl-']:hover
 {
-    color: rgba(255, 255, 255, .66);
+    color: rgba(227, 6, 19, .5);
 }
 
 .bg-dark .owl-theme .owl-dots .owl-dot span,
